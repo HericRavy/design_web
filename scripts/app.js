@@ -1,1 +1,1 @@
-alert("Executando: Vírus...");
+alert("Olá Mundo!");
