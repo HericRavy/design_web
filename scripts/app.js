@@ -7,6 +7,9 @@ let alura = 1.76;
 
 if (viva){
     let saudacao = "Olá" + nome + "!"
-    let msg `Altura ${altura}m | Idade ${2026-nasc}`;
-    alert(saudacao )
+    let msg = `Altura ${altura}m | Idade ${2026-nasc}`;
+    alert(saudacao +"\n" + msg);    
+}
+else{
+    alert("R.I.P")
 }
