@@ -16,7 +16,7 @@ function calcIdade(ano=2026){
 
     }
     
-    alert(`${nome} é menor de idade? ${menor}\nIdade: ${idade}\n Pode beber:${podebeber}`)
+    alert(`${nome} é menor de idade? ${menor}\nIdade: ${idade}\nPode beber:${podebeber}`)
     return idade;
 }
 calcIdade();
