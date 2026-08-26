@@ -8,15 +8,17 @@ function calcIdade(ano=2026){
     if (idade < 18){
         alert(`${nome} é menor de idade`)
         menor = true
+        var podebeber = false;
     
     }else{
         menor = false
+        var podebeber = true;
 
     }
     
-    alert(`${nome} é menor de idade? ${menor}\nIdade: ${idade}`)
+    alert(`${nome} é menor de idade? ${menor}\nIdade: ${idade}\n Pode beber:${podebeber}`)
     return idade;
 }
 calcIdade();
-//alert(`Fora da função: Idade ${idade}`); Erro pois a variável lrt não existe fora do escopo dela
-alert(`Fora da função: Idade ${calcIdade(2027)}`);
+/* var vaza a variável dentro do escopo da mesma função
+alert(`Pode beber: ${podebeber}`);*/
