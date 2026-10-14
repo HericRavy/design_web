@@ -7,7 +7,7 @@ class Animal{
         this.raca = raca;
     }
 
-    latir(){
+    falar(){
         alert("Oi");
     }
     comer(kg){
@@ -27,5 +27,36 @@ class Animal{
         
     }
 }
-const balu = new Animal("Balu")
-const mel = new Animal ("Mel", "Amarelo", 1,10, 45, "Labrador")
+
+class Cachorro extends Animal{
+    constructor(nome, cor="Desconhecido", altura=0.3, peso=0, raca="Vira-lata"){
+        super(nome, cor, altura, peso, raca);
+        this.patas = 4;
+    }
+    falar(){
+        alert("au! au!");
+    }
+    saudar(){
+        let msg = super.saudar();
+            msg = msg + "\nSou um cachorro!"
+            alert(msg);
+    }
+}
+
+class Passaro extends Animal{
+    constructor(nome, cor="Desconhecido", altura=0.3, peso=0, raca="Vira-lata"){
+        super(nome, cor, altura, peso, raca)
+    }
+    falar(){
+        alert("fiu!fiu!");
+    }
+    saudar(){
+        let msg = super.saudar();
+            msg = msg + "\nSou um pássaro!"
+            alert(msg);
+    }
+}
+
+const balu = new Cachorro("Balu")
+const mel = new Animal ("Mel", "Amarelo", 1,10, "Labrador")
+const leleco = new Passaro("Leleco", undefined, undefined, undefined, "Papagaio")
