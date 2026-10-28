@@ -3,16 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 13: Js Objetos do Browser</title>
+    <link rel="stylesheet" href="estilo.css"/>
 </head>
 <body>
-    <h1>Olá, meu nome é Ravy!</h1>
-    <form id="cadastro">
-        <input type="text" name="nome" required placeholder="Digite seu nome"/>
-        <input type="date" name="nasc" required placeholder="Data dia nascimento"/>
-        <input type="submit" >
-    </form>
-    <p id="saudacao"></p>
-    <p id="aniversario"></p>
-    <script src="./Js/app.js" defer></script>
+    <h1 id="topo">Olá, meu nome é Ravy!</h1>
+    <h3>Data: 28/10/2026</h3>
+
+    <p>
+        Naruto
+        <span id="enfase">é melhor</span>
+        que One Piece
+    </p>
+
+    <p>
+        e teje dito!
+    </p>
+    <button onclick="destacar();">Destacar</button>
+    <button onclick="cancelar()">Cancelar</button>
+    <script src="./JavaScript/app.js" defer></script>
 </body>
 </html>
